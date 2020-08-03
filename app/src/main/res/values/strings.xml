@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ServiceProviderApplication</string>
     <string name="title_activity_maps">Map</string>
+    <string name="serviceproviderapplication">ServiceProviderApplication</string>
+    <string name="house_no_45_512_slv_gents_paying_guest_gb_paliya_electronic_city_bengalur_560068">HOUSE NO 45-512 SLV GENTS PAYING GUEST GB Paliya, Electronic City. Bengalur 560068</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="google_maps_key"></string>
 </resources>
