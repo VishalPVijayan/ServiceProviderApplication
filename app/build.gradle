@@ -29,7 +29,7 @@ dependencies {
     //BUTTER KNIEF INJECTION
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
-    
+
 
     //GOOGLE MAP DEPENDENCIES
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
