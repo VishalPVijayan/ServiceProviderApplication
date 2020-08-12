@@ -1,9 +1,641 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="#B4B842"
     tools:context=".ContentActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Dashboard"
+            android:layout_margin="10dp"
+            android:textColor="#151515"
+            android:textSize="20dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewPlumb"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/water_pump"
+                        android:background="#844092"/>
+
+                    <TextView
+                        android:text="Plumbing"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:id="@+id/cardViewElectricity"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/electricity"
+                        android:background="#B4B32A" />
+
+                    <TextView
+                        android:text="Electricity"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewCleaning"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:background="#844092"
+                        android:src="@drawable/cleaning" />
+
+                    <TextView
+                        android:text="Cleaning"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewCarpenter"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/carpenter"
+                        android:background="#B4B32A" />
+
+                    <TextView
+                        android:text="Carpenter"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewelectric_repair"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/electrical_repair"
+                        android:background="#844092"/>
+
+                    <TextView
+                        android:text="Appliances Repair"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewBrush"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/brush"
+                        android:background="#B4B32A" />
+
+                    <TextView
+                        android:text="House Painters"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewSpa"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/saloon"
+                        android:background="#844092"/>
+
+                    <TextView
+                        android:text="Spa and Massage"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardViewSaloon"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/hairstyle"
+                        android:background="#B4B32A" />
+
+                    <TextView
+                        android:text="Saloon"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#AC3626" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#00BCD4" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#4CAF50" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#F5DD0B" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#112BC0" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#E61C42"-->
+            <!--                        />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#112BC0" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#E61C42"-->
+            <!--                        />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#112BC0" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="170dp"-->
+            <!--                app:cardCornerRadius="12dp"-->
+            <!--                app:cardElevation="5dp"-->
+            <!--                app:cardBackgroundColor="@color/colorPrimary"-->
+            <!--                android:layout_margin="10dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="vertical">-->
+
+            <!--                    <ImageView-->
+            <!--                        android:layout_width="44dp"-->
+            <!--                        android:layout_height="44dp"-->
+            <!--                        android:src="@drawable/water_pump"-->
+            <!--                        android:background="#E61C42" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:text="Plumbing"-->
+            <!--                        android:layout_margin="10dp"-->
+            <!--                        android:textSize="15dp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"/>-->
+
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
