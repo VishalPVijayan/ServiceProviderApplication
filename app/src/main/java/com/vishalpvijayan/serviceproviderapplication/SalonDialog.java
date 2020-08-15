@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -102,7 +103,8 @@ public class SalonDialog extends AppCompatDialogFragment {
                 .setPositiveButton("Request Service", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
+                        Intent i = new Intent(getContext(),FetchLocationActivity.class);
+                        startActivity(i);
                     }
                 })
                 .setNegativeButton(" Cancel", new DialogInterface.OnClickListener() {

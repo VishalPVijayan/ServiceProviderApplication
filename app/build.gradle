@@ -39,6 +39,8 @@ dependencies {
 
     //For RuntimePermission
     implementation 'com.karumi:dexter:6.2.1'
+    //Razor Pay
+    implementation 'com.razorpay:checkout:1.5.16'
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

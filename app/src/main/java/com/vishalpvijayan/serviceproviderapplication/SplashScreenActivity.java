@@ -35,7 +35,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // This method will be executed once the timer is over
-                Intent i = new Intent(SplashScreenActivity.this, TabbedActivity.class);
+                Intent i = new Intent(SplashScreenActivity.this, ContentActivity.class);
                 startActivity(i);
                 finish();
             }
